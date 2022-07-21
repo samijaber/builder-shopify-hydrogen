@@ -10,6 +10,7 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ['@headlessui/react', 'clsx', 'react-use', 'typographic-base'],
+    exclude: ['@builder.io/react', '@builder.io/sdk'],
   },
   test: {
     globals: true,

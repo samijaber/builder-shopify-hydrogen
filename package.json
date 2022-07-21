@@ -35,6 +35,7 @@
   "prettier": "@shopify/prettier-config",
   "dependencies": {
     "@builder.io/react": "^2.0.1",
+    "@builder.io/sdk": "^1.1.26",
     "@builder.io/widgets": "^1.2.22",
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
@@ -45,12 +46,8 @@
     "react-dom": "^18.2.0",
     "react-use": "^17.4.0",
     "title": "^3.4.4",
-    "typographic-base": "^1.0.4"
+    "typographic-base": "^1.0.4",
+    "vm": "^0.1.0"
   },
-  "author": "dylan",
-  "resolutions": {
-    "@builder.io/react": "portal:../builder/packages/react",
-    "@builder.io/sdk": "portal:../builder/packages/core"
-  },
-  "packageManager": "yarn@3.2.1"
+  "author": "dylan"
 }
