@@ -1,0 +1,27 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+    build-sdk:
+      dir: ~/src/builder/packages/core
+      generates:
+        - '~/src/builder/packages/core/dist/**/*'
+      cmds:
+        - npm run build
+    build-react:
+      dir: ~/src/builder/packages/react
+      generates:
+        - '~/src/builder/packages/react/dist/**/*'
+      deps:
+        - build-sdk
+      cmds:
+        - npm run build
+    preview:
+      deps:
+        - build-react
+      cmds:
+        - yarn run preview

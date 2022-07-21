@@ -47,5 +47,10 @@
     "title": "^3.4.4",
     "typographic-base": "^1.0.4"
   },
-  "author": "dylan"
+  "author": "dylan",
+  "resolutions": {
+    "@builder.io/react": "portal:../builder/packages/react",
+    "@builder.io/sdk": "portal:../builder/packages/core"
+  },
+  "packageManager": "yarn@3.2.1"
 }

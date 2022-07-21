@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [hydrogen()],
   resolve: {
     alias: [{find: /^~\/(.*)/, replacement: '/src/$1'}],
+    preserveSymlinks: true,
   },
   optimizeDeps: {
     include: ['@headlessui/react', 'clsx', 'react-use', 'typographic-base'],
